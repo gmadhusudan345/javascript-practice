@@ -2,12 +2,12 @@
     background: #0f0c29;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
 }
 .testimonials h1{
     color: #fff;
@@ -24,7 +24,29 @@ flex-direction: column;
     list-style-type: none;
     padding-left: 0;
 }
+.cdata:before{
+    content:'"';
+    font-family: fantasy;
+    font-size: 24px;
+    line-height: 0;
+    position: relative;
+    top: 5px;
+}
+.cdata:after{
+    content:'"';
+    font-family: fantasy;
+    font-size: 24px;
+    line-height: 0;
+    position: relative;
+    top: 5px;
+}
 .cname{
     text-align: right;
     font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    .testimonial-wrapper {
+        padding: 24px;
+    }
 }
